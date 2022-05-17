@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP LOOKUP</title>
+	
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="login.js"></script>
+</head>
+ 
+<body>
+<div id="main_frame">
+
+	<div class="header">
+		<h1>IP LOOKUP</h1>
+	</div>
+ 
+    <form method="post" action="login.js">
+ 
+        <p>
+			<label class="label_input">Username</label>
+			<input type="text" id="username" class="text_field"/>
+		</p>
+        <p>
+			<label class="label_input">Password</label>
+			<input type="password" id="pass" class="text_field"/>
+		</p>
+        <div id="login_control">
+            <input type="button" id="btn_only" value="Login" onclick="login();"/>
+        </div>
+    </form>
+</div>
+ 
+</body>
+</html>

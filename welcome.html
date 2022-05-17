@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome!</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="welcome.js"></script>
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	</head>
+ 
+	<body>
+		<div id="main_frame">
+			<div class="header">
+				<h1>Please input the IP:</h1>
+			</div>	
+			<form>
+				<p>
+					<label class="label_input">IP</label>
+					<input type="text" id="ip_input" class="text_field" pattern="^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"/>
+				</p>
+				<div id="login_control">
+					<input type="button" id="btn_only" value="Search" onclick="getResult();"/>
+				</div>
+			</form>
+		</div>
+		<div id="map_frame">
+			<div id="mapid"></div>
+		</div>
+	</body>
+</html>
